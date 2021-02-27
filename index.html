@@ -32,9 +32,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- 下拉摺疊選單 -->
-      <div id="navbar-yc" class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav mr-auto text-center">
-          <li class="nav-item active">
+      <div id="navbar-yc" class="collapse navbar-collapse text-right">
+        <ul class="navbar-nav">
+          <li class="nav-item">
             <a class="nav-link" href="#about">關於我</a>
           </li>
           <li class="nav-item">
@@ -271,7 +271,9 @@
               <img src="./images/mumu.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">募募 mumu</h5>
-                <p class="card-text">　　募募是一個便利的線上物資捐贈、分享平台，提供使用者註冊為平台會員。登入後，會員可以於募募捐贈頁面認購、捐贈由一些基金會、家扶中心或其他中、小型機構……等提出的待捐贈物資。另外，也可於會員中心發布一些家裡較用不到，想與平台其他使用者分享的物品。</p>
+                <p class="card-text">
+                  　　募募是一個便利的線上物資捐贈、分享平台，提供使用者註冊為平台會員。登入後，會員可以於募募捐贈頁面認購、捐贈由一些基金會、家扶中心或其他中、小型機構……等提出的待捐贈物資。另外，也可於會員中心發布一些家裡較用不到，想與平台其他使用者分享的物品。
+                </p>
                 <span class="badge badge-pill">Vue.js</span>
                 <span class="badge badge-pill">Quasar</span>
                 <span class="badge badge-pill">Sass</span>
@@ -406,7 +408,7 @@
               <img src="./images/cafe.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">泰山咖啡莊園</h5>
-                <p class="card-text">使用 Bootstrap 切版、jQuery 套件、animate.css 動畫及 textillate.js 文字動態效果。</p>
+                <p class="card-text">使用 Bootstrap 切版的一頁式網站，另外添加 animate.css 動畫及 textillate.js 文字動態效果。</p>
                 <span class="badge badge-pill">HTML</span>
                 <span class="badge badge-pill">SASS</span>
                 <span class="badge badge-pill">jQuery</span>
@@ -420,6 +422,7 @@
               <div class="card-body" style="border-top: 1px solid #ddd">
                 <h5 class="card-title">線上相簿</h5>
                 <p class="card-text">線上相簿提供使用者註冊及登入。登入會員後會跳至個人相簿空間，可於個人空間上傳相片，相片發布後具編輯及刪除功能。</p>
+                <p style="font-size: 15px; margin-bottom: 0.5rem; color: firebrick">帳號：guest / 密碼：guest</p>
                 <span class="badge badge-pill">Vue.js</span>
                 <span class="badge badge-pill">pug</span>
                 <span class="badge badge-pill">Bootstrap Vue</span>
@@ -435,7 +438,7 @@
               <img src="./images/abc.JPG" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">幼兒英語學習平台</h5>
-                <p class="card-text">使用 jQuery 及 CSS 3D 實現翻牌配對遊戲。當英文字母與單字配對成功時，會播放單字發音。</p>
+                <p class="card-text">使用 CSS 3D 實現翻牌配對遊戲。提供孩童學習及認知英文字母 A ~ Z，當英文字母與單字配對成功時，會播放單字發音，藉以強化孩童的記憶。</p>
                 <span class="badge badge-pill">HTML</span>
                 <span class="badge badge-pill">CSS</span>
                 <span class="badge badge-pill">jQuery</span>
@@ -461,7 +464,7 @@
               <img src="./images/hole.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">勇闖惡魔島</h5>
-                <p class="card-text">使用 html5 和 jQuery 製作的遊戲。遊戲時間內，打擊隨機在洞口出現的小惡魔，地洞加入CSS 動畫效果，增加難度，時間結束時計算遊戲分數。</p>
+                <p class="card-text">遊戲時間內，打擊隨機在洞口出現的小惡魔，地洞加入CSS 動畫效果，增加難度，時間結束時計算遊戲分數。</p>
                 <span class="badge badge-pill">HTML</span>
                 <span class="badge badge-pill">CSS</span>
                 <span class="badge badge-pill">JavaScript</span>
@@ -516,14 +519,6 @@
       // 目前捲軸捲動的距離(與最頂端 0 之間的距離)
       nowlocated = $(window).scrollTop()
       // console.log(nowlocated);
-      // if (nowlocated > 500) {
-      //   $('#go_top_page').fadeIn(1000)
-      //   $('#go_top_page').css({ 'animation-iteration-count': 3 })
-      // } else {
-      //   $('#go_top_page').fadeOut(1000)
-      //   $('#go_top_page').css({ 'animation-iteration-count': 'none' })
-      // }
-
       // 捲軸捲動位置小於 520，#navbar 背景變成透明
       if (nowlocated <= 520) {
         $('#navbar').css({
@@ -542,21 +537,5 @@
     $('.navbar-toggler').on('click', function () {
       $('#navbar').toggleClass('toggle_black')
     })
-
-    //---
-
-    var tmp = 'javascript'
-
-    function f() {
-      console.log(tmp)
-      if (true) {
-        let tmp = 'hello world'
-        console.log(tmp)
-      }
-      console.log(tmp)
-    }
-    f()
-
-    console.log(f())
   </script>
 </html>
