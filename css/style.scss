@@ -99,7 +99,25 @@ body {
 .content03,
 .content04,
 .content05 {
-  margin: 0 3rem;
+  @include xs {
+    margin: 0 1rem;
+  }
+
+  @include sm {
+    margin: 0 1rem;
+  }
+
+  @include md {
+    margin: 0 3rem;
+  }
+
+  @include lg {
+    margin: 0 3rem;
+  }
+
+  @include xl {
+    margin: 0 3rem;
+  }
 }
 
 /* section01 */
@@ -209,7 +227,7 @@ body {
     border-radius: 10px;
     opacity: 0.75;
     @include xs {
-      width: 325px;
+      // width: 325px;
       height: 350px;
       margin: auto;
       margin-bottom: 1rem;

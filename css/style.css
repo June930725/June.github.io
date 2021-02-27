@@ -42,11 +42,49 @@ body {
 }
 
 /* content 預設 */
-.content02,
-.content03,
-.content04,
-.content05 {
-  margin: 0 3rem;
+@media (max-width: 575px) {
+  .content02,
+  .content03,
+  .content04,
+  .content05 {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .content02,
+  .content03,
+  .content04,
+  .content05 {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .content02,
+  .content03,
+  .content04,
+  .content05 {
+    margin: 0 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .content02,
+  .content03,
+  .content04,
+  .content05 {
+    margin: 0 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content02,
+  .content03,
+  .content04,
+  .content05 {
+    margin: 0 3rem;
+  }
 }
 
 /* section01 */
@@ -190,7 +228,6 @@ body {
 
 @media (max-width: 575px) {
   #section02 .selfie {
-    width: 325px;
     height: 350px;
     margin: auto;
     margin-bottom: 1rem;
