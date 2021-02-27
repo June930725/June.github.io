@@ -2,10 +2,561 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>我的網頁</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/brands.min.css" />
+    <link rel="stylesheet" href="./css/solid.min.css" />
+    <!-- hover.css -->
+    <!-- <link rel="stylesheet" href="./css/hover-min.css" /> -->
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>YC's Portfolio</title>
   </head>
-  <body>
-    <h1>OooooooH!</h1>
+  <body class="h-100">
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div>
+        <a class="navbar-brand" href="#">YING-CHEN</a>
+      </div>
+      <!-- 漢堡按鈕 -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-yc">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 下拉摺疊選單 -->
+      <div id="navbar-yc" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav mr-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">關於我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">專業技能</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">個人經歷</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">相關作品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">聯絡資訊</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="section01">
+      <div class="container-fluid">
+        <!-- jarallax -->
+        <div class="jarallax" data-jarallax data-speed="0.3" data-type="scroll">
+          <img class="jarallax-img" src="../images/main01.jpg" />
+          <div class="text-center text-white greet">Hi! I am <span class="bold">Ying-Chen</span>.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section02">
+      <div class="container">
+        <h1 id="about" class="text-center">About Me</h1>
+        <div class="d-flex row h-100 justify-content-center align-items-center content02">
+          <div class="col-12 col-lg-4">
+            <div class="selfie"></div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div>
+              <p class="titleAbout">挑戰自我，走出舒適圈</p>
+              <!-- <p>5 years + Graphic Designer</p> -->
+              <p>
+                　　畢業於明志科技大學視覺傳達設計系，擁有近六年的工作經驗，責任心強、對事物充滿好奇心，也樂於嘗試新的挑戰。工作一段時間後，開始發掘自已職涯的其他可能，思考自身的設計能力可以拓展的方向，於是有了轉職網頁前端設計師的想法。
+              </p>
+              <p>
+                　　綜合評估後，毅然決然參與了泰山職業訓練場「前端網頁開發技術」全日制職業訓練課程。半年的時間裡，扎扎實實的學習了HTML、CSS、SASS、RWD、Figma、JavaScript、jQuery、
+                RESTful API 資料串接應用……等前端技術。
+              </p>
+              <p>
+                　　過往的工作經驗，使我具備獨立作業、團隊合作、時間管理及良好的溝通能力，遇到問題時會抱著積極正面的態度面對它、解決它，期許未來能將這些能力結合網頁前端，朝更專業領域職務邁進，設計出兼具質感的網頁作品。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section03">
+      <div class="container">
+        <h1 id="skills" class="text-center">Skills</h1>
+        <div class="d-flex row h-100 justify-content-center align-items-center content03">
+          <div class="col-12 col-lg-3 col-xl-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h5 class="card-title text-center">視覺設計</h5>
+                <div class="card-text item">
+                  <div>
+                    <ul>
+                      <li>Illustrator</li>
+                      <li>Photoshop</li>
+                      <li>InDesign</li>
+                      <li>Figma</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <h5 class="card-title text-center">前端開發</h5>
+                <div class="card-text d-flex row">
+                  <div class="col-6 item">
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Sass</li>
+                      <li>Bootstrap</li>
+                    </ul>
+                  </div>
+                  <div class="col-6 item">
+                    <ul>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>Vue.js</li>
+                      <li>Quasar</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3 col-xl-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h5 class="card-title text-center">後端技術</h5>
+                <div class="card-text">
+                  <div class="item">
+                    <ul>
+                      <li>Node.js</li>
+                      <li>MongoDB</li>
+                      <li>Git 版本控管</li>
+                      <br />
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section04">
+      <div class="container">
+        <h1 id="resume" class="text-center">Resume</h1>
+        <div class="d-flex row h-100 justify-content-center content04">
+          <div class="col-12 col-lg-6">
+            <p class="titleAbout">學習歷程</p>
+            <div id="wda">
+              <p class="during">Aug 2020 - Feb 2021</p>
+              <p class="title">泰山職訓－前端網頁開發技術班（青年專班）</p>
+
+              <p>
+                　　為了提升自己的競爭力，報名參加泰山職業訓練場為期半年的前端網頁設計課程，期間擔任班長一職，協助導師處理班上事務，也協助同學解決學習時所遇到的問題，並於訓練期間考取網頁設計丙級證照。在訓期間，不只學習了前端技術，同時也強化了自己對於問題分析及解決的能力。
+              </p>
+
+              <p class="mt-2 mb-1 pr-0" style="font-size: 15px">
+                <i class="fas fa-check"></i>
+                <b>程式能力、邏輯思考與專案執行</b>
+              </p>
+
+              <span class="badge badge-pill">HTML</span>
+              <span class="badge badge-pill">CSS</span>
+              <span class="badge badge-pill">SASS</span>
+              <span class="badge badge-pill">Bootstrap</span>
+              <span class="badge badge-pill">JavaScript</span>
+              <span class="badge badge-pill">jQuery</span>
+              <span class="badge badge-pill">Vue.js</span>
+              <span class="badge badge-pill">Quasar</span>
+              <span class="badge badge-pill">Node.js</span>
+              <span class="badge badge-pill">mongoDB</span>
+            </div>
+            <div id="edu">
+              <p class="during">Sep 2011 - Jun 2015</p>
+              <p class="title">明志科技大學 視覺傳達設計系</p>
+              <p>　　在學期間主修平面設計，除了學習以外，還參加了康輔社，擔任社團的行政長，處理社團庶務，同時擔任一日營隊的活動總召，籌劃各種活動，這些都經驗都讓我成長良多。</p>
+
+              <p class="mt-2 mb-1 pr-0" style="font-size: 15px">
+                <i class="fas fa-check"></i>
+                <b>美感培養、設計流程與軟體訓練</b>
+              </p>
+
+              <span class="badge badge-pill">Illustrator</span>
+              <span class="badge badge-pill">Photoshop</span>
+              <span class="badge badge-pill">Indesign</span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="titleAbout">工作經驗</p>
+            <div id="people">
+              <p class="during">Apr 2019 - Feb 2020</p>
+              <p class="title">美術編輯 _ 人類智庫出版集團</p>
+              <ul>
+                <li>兒童雜誌及繪本設計與編排</li>
+                <li>兒童平面教具設計</li>
+                <li>書盒、教具盒包裝設計</li>
+              </ul>
+            </div>
+
+            <div id="knsh">
+              <p class="during">Jun 2016 - Apr 2019</p>
+              <p class="title">美術編輯 _ 康軒文教集團</p>
+              <ul>
+                <li>參與十二年國教美感細胞＿教科書再造計劃，版面規劃、設計與編排</li>
+                <li>教科書、參考書的封面、內頁規劃，發圖、修圖、設計與編排</li>
+                <li>平面文宣、海報、教具設計</li>
+                <li>印前檔案檢查、印製檔案管理、打樣發廠、定期請款作業</li>
+                <li>印刷品、製作物成品檢驗及品質控管</li>
+              </ul>
+            </div>
+
+            <div id="ez">
+              <p class="during">Aug 2015 - May 2016</p>
+              <p class="title">國際機票票務 _ ezTravel 易遊網</p>
+              <ul>
+                <li>負責個人機票訂票、改票及退票業務</li>
+                <li>負責旅客訂房業務</li>
+                <li>負責旅客護照辦理、簽證申請</li>
+                <li>支援國際旅展產品推廣及行程說明</li>
+              </ul>
+            </div>
+
+            <div id="fpg">
+              <p class="during">Sep 2013 - Sep 2014</p>
+              <p class="title">美術編輯 _ 台塑購物網</p>
+              <ul>
+                <li>協助網站活動頁面切版</li>
+                <li>負責 EDM 及 Banner 製作</li>
+                <li>海報設計及印刷作業</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section05">
+      <div class="container">
+        <h1 id="portfolio" class="text-center">Portfolio</h1>
+        <div class="row content05">
+          <div class="col-12 col-md-6 col-lg-5 px-md-2">
+            <a class="card h-100 text-decoration-none" href="https://june930725.github.io/mumu/#/" target="_blank">
+              <img src="./images/mumu.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">募募 mumu</h5>
+                <p class="card-text">　　募募是一個便利的線上物資捐贈、分享平台，提供使用者註冊為平台會員。登入後，會員可以於募募捐贈頁面認購、捐贈由一些基金會、家扶中心或其他中、小型機構……等提出的待捐贈物資。另外，也可於會員中心發布一些家裡較用不到，想與平台其他使用者分享的物品。</p>
+                <span class="badge badge-pill">Vue.js</span>
+                <span class="badge badge-pill">Quasar</span>
+                <span class="badge badge-pill">Sass</span>
+                <span class="badge badge-pill">JavaScript</span>
+                <span class="badge badge-pill">Axios</span>
+                <span class="badge badge-pill">Node.js</span>
+                <span class="badge badge-pill">MongoDB</span>
+                <span class="badge badge-pill">Google Analytics</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-7 px-md-2">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne">募募概念發想</button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>　　募募是一個便利的線上物資捐贈、分享平台，希望能募集一些願意分享的人，也募集一些需要幫助的人到這個平台，得到一些物質上的幫助。</p>
+                    <p>　　而募募的目標是讓閒置的資源再次流動，少一點消費就會少一點浪費，幫自己用不到的物品找尋第二個主人，讓其能更有效地被使用。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link text-decoration-none collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      使用者前台
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body row">
+                    <div class="col-12 col-xl-6 px-0">
+                      <ul>
+                        <p class="subtitile">前台功能</p>
+                        <li>會員註冊／登入</li>
+                        <li>物資捐贈／募募分享商品瀏覽</li>
+                        <li>加入購物車／送出訂單功能</li>
+                        <li>查看會員資料及修改</li>
+                        <li>查看會員訂單詳細資訊</li>
+                        <li>會員新增欲捐物資到募募分享頁面</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-xl-6 px-0">
+                      <ul>
+                        <p class="subtitile">前台使用技術</p>
+                        <li>使用 Quasar 開發、切版</li>
+                        <li>Vuex 存取購物車資料</li>
+                        <li>Vue Router 頁面切換</li>
+                        <li>SCSS 預處理器</li>
+                        <li>RWD 響應式網頁設計</li>
+                        <li>Google analytics 分析</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link text-decoration-none collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      管理者後台
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body row">
+                    <div class="col-12 col-xl-6 px-0">
+                      <ul>
+                        <p class="subtitile">後台功能</p>
+                        <li>新增物資品項</li>
+                        <li>使用名稱、類別或數量查詢物資</li>
+                        <li>修改發布至前台的物資內容</li>
+                        <li>刪除完成募集的物資</li>
+                        <li>查詢及編輯會員發布的分享物品</li>
+                        <li>會員資料修改及刪除</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-xl-6 px-0">
+                      <ul>
+                        <p class="subtitile">後台使用技術</p>
+                        <li>處理前端請求：Node.js + Express 套件</li>
+                        <li>資料存取：MongoDB + Mongoose 套件</li>
+                        <li>部署 MongoDB 版的網頁到 Heroku</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content05">
+          <hr />
+        </div>
+        <div class="row content05">
+          <div class="col-12 col-md-6 col-lg-4 px-md-2">
+            <a class="card h-100 text-decoration-none" href="https://github.com/June930725/linebot2020" target="_blank">
+              <img src="./images/camppy.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Camppy LINE Bot</h5>
+                <p class="card-text">Camppy 是一款協助查詢露營營地的 LINE Bot，於欄位輸入欲前往的縣市，Camppy 將列出符合您需求的十筆資料提供參考。</p>
+
+                <span class="badge badge-pill">JavaScript</span>
+                <span class="badge badge-pill">cheerio.js</span>
+                <span class="badge badge-pill">Axios</span>
+                <span class="badge badge-pill">Node.js</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 px-md-2">
+            <a class="card h-100 text-decoration-none" href="https://june930725.github.io/bs-cafe/" target="_blank">
+              <img src="./images/cafe.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">泰山咖啡莊園</h5>
+                <p class="card-text">使用 Bootstrap 切版、jQuery 套件、animate.css 動畫及 textillate.js 文字動態效果。</p>
+                <span class="badge badge-pill">HTML</span>
+                <span class="badge badge-pill">SASS</span>
+                <span class="badge badge-pill">jQuery</span>
+                <span class="badge badge-pill">Bootstrap</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 px-md-2">
+            <a class="card h-100 text-decoration-none" href="https://june930725.github.io/Vue-Album/#/" target="_blank">
+              <img src="./images/album.JPG" class="card-img-top" />
+              <div class="card-body" style="border-top: 1px solid #ddd">
+                <h5 class="card-title">線上相簿</h5>
+                <p class="card-text">線上相簿提供使用者註冊及登入。登入會員後會跳至個人相簿空間，可於個人空間上傳相片，相片發布後具編輯及刪除功能。</p>
+                <span class="badge badge-pill">Vue.js</span>
+                <span class="badge badge-pill">pug</span>
+                <span class="badge badge-pill">Bootstrap Vue</span>
+                <span class="badge badge-pill">JavaScript</span>
+                <span class="badge badge-pill">Axios</span>
+                <span class="badge badge-pill">Node.js</span>
+                <span class="badge badge-pill">MongoDB</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 px-md-2">
+            <a class="card h-100 text-decoration-none" href="https://june930725.github.io/jQ-matching-game/" target="_blank">
+              <img src="./images/abc.JPG" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">幼兒英語學習平台</h5>
+                <p class="card-text">使用 jQuery 及 CSS 3D 實現翻牌配對遊戲。當英文字母與單字配對成功時，會播放單字發音。</p>
+                <span class="badge badge-pill">HTML</span>
+                <span class="badge badge-pill">CSS</span>
+                <span class="badge badge-pill">jQuery</span>
+                <span class="badge badge-pill">Illustrator</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 px-md-2">
+            <a class="card h-100 text-decoration-none" href="https://june930725.github.io/jQ-shooting-game/" target="_blank">
+              <img src="./images/money.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">8bit 抓錢小遊戲</h5>
+                <p class="card-text">使用 jQuery 的 DOM 操作和動畫製作而成。時間內，點擊鈔票分數加一，點擊便便分數減一，時間結束時，會計算遊戲分數。</p>
+                <span class="badge badge-pill">HTML</span>
+                <span class="badge badge-pill">CSS</span>
+                <span class="badge badge-pill">jQuery</span>
+                <span class="badge badge-pill">Photoshop</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 px-md-2">
+            <a class="card h-100 text-decoration-none" href="https://june930725.github.io/Whack_A_Mole/" target="_blank">
+              <img src="./images/hole.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">勇闖惡魔島</h5>
+                <p class="card-text">使用 html5 和 jQuery 製作的遊戲。遊戲時間內，打擊隨機在洞口出現的小惡魔，地洞加入CSS 動畫效果，增加難度，時間結束時計算遊戲分數。</p>
+                <span class="badge badge-pill">HTML</span>
+                <span class="badge badge-pill">CSS</span>
+                <span class="badge badge-pill">JavaScript</span>
+                <span class="badge badge-pill">Photoshop</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section06">
+      <div class="container">
+        <h1 id="contact" class="text-center">Contact Me</h1>
+        <div class="text-center">
+          <a
+            href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;to=hilight0725@gmail.com
+          "
+            ><i class="fas fa-envelope"></i></a
+          >&nbsp;&nbsp;
+          <a href="https://github.com/June930725"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="d-flex justify-content-center">
+      <div role="status">
+        <img src="./images/cloud.svg" alt="" />
+      </div>
+    </div> -->
+
+    <footer id="footer">
+      <p class="text-center">
+        © Copyright 2021. All Rights Reserved
+        <br />
+        Designed by YC,Wu
+      </p>
+    </footer>
   </body>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <!-- Jarallax -->
+  <script src="./js/jarallax.js"></script>
+  <script>
+    // 回到頂端 top 按鈕
+    $('#go_top_page').css({ display: 'none' })
+    let nowlocated = 0
+    $(window).on('scroll', function () {
+      // 目前捲軸捲動的距離(與最頂端 0 之間的距離)
+      nowlocated = $(window).scrollTop()
+      // console.log(nowlocated);
+      // if (nowlocated > 500) {
+      //   $('#go_top_page').fadeIn(1000)
+      //   $('#go_top_page').css({ 'animation-iteration-count': 3 })
+      // } else {
+      //   $('#go_top_page').fadeOut(1000)
+      //   $('#go_top_page').css({ 'animation-iteration-count': 'none' })
+      // }
+
+      // 捲軸捲動位置小於 520，#navbar 背景變成透明
+      if (nowlocated <= 520) {
+        $('#navbar').css({
+          // background: 'transparent',
+          background: '#fff',
+          opacity: '0.8',
+        })
+      } else {
+        $('#navbar').css({
+          background: '#fff',
+          opacity: '1',
+        })
+      }
+    })
+
+    $('.navbar-toggler').on('click', function () {
+      $('#navbar').toggleClass('toggle_black')
+    })
+
+    //---
+
+    var tmp = 'javascript'
+
+    function f() {
+      console.log(tmp)
+      if (true) {
+        let tmp = 'hello world'
+        console.log(tmp)
+      }
+      console.log(tmp)
+    }
+    f()
+
+    console.log(f())
+  </script>
 </html>

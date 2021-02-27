@@ -1,0 +1,505 @@
+// RWD
+$breakpoint-xs: 575px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin xs {
+  @media (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+// 主色
+$c1: #c8e6ff;
+$c2: rgb(110, 190, 245);
+
+// @include xs {
+
+// }
+
+// @include sm {
+
+// }
+
+// @include md {
+
+// }
+
+// @include lg {
+
+// }
+
+// @include xl {
+
+// }
+
+body {
+  font-family: 'Quicksand', 'Noto Sans TC', '微軟正黑體';
+}
+
+/* navbar */
+#navbar {
+  .navbar-brand {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    margin-left: 2rem;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .nav-link {
+    font-weight: 900;
+  }
+}
+
+/* section 預設 */
+#section01,
+#section02,
+#section03,
+#section04,
+#section05 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* content 預設 */
+.content02,
+.content03,
+.content04,
+.content05 {
+  margin: 0 3rem;
+}
+
+/* section01 */
+#section01 {
+  // height: 600px;
+  width: 100%;
+  position: relative;
+  .container-fluid {
+    padding: 0;
+  }
+}
+
+#section01 {
+  .jarallax {
+    height: 480px;
+    width: auto;
+
+    @include xs {
+      clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 87.5%, 0 80%);
+    }
+
+    @include sm {
+      clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 87.5%, 0 80%);
+    }
+
+    @include md {
+      clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 87.5%, 0 80%);
+    }
+
+    @include lg {
+      clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 87.5%, 0 80%);
+    }
+
+    @include xl {
+      clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    }
+    position: relative;
+    z-index: 0;
+
+    .greet {
+      text-shadow: black 3px 3px 20px;
+      font-weight: 300;
+      position: absolute;
+      white-space: nowrap;
+
+      @include xs {
+        font-size: 2rem;
+        left: 50%;
+        bottom: 20%;
+        transform: translate(-50%, -50%);
+      }
+
+      @include sm {
+        font-size: 2rem;
+        left: 50%;
+        bottom: 20%;
+        transform: translate(-50%, -50%);
+      }
+
+      @include md {
+        font-size: 2rem;
+        left: 50%;
+        bottom: 20%;
+        transform: translate(-50%, -50%);
+      }
+
+      @include lg {
+        font-size: 2.5rem;
+        left: 50%;
+        bottom: 17.5%;
+        transform: translate(-50%, -50%);
+      }
+
+      @include xl {
+        font-size: 3.5rem;
+        left: 50%;
+        bottom: 7.5%;
+        transform: translate(-50%, -50%);
+      }
+      .bold {
+        font-weight: 500;
+      }
+    }
+  }
+  .jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+/* section02 */
+#section02 {
+  #about {
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+  }
+  .selfie {
+    background: url('../images/light02.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    opacity: 0.75;
+    @include xs {
+      width: 325px;
+      height: 350px;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+
+    @include sm {
+      width: 325px;
+      height: 350px;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+
+    @include md {
+      width: 325px;
+      height: 350px;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+
+    @include lg {
+      width: 246px;
+      height: 332px;
+      margin: auto;
+      margin-bottom: 0;
+    }
+
+    @include xl {
+      width: 250px;
+      height: 270px;
+      margin: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .selfie:hover {
+    opacity: 1;
+    border-radius: 30px;
+    transform: scale(1) rotate(-3deg);
+    transition: 1s ease-out;
+  }
+
+  .content02 {
+    margin-bottom: 1rem;
+    .titleAbout {
+      color: $c2;
+      font-size: 20px;
+      font-weight: 900;
+      margin-top: 7px;
+      letter-spacing: 0.5px;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+/* section03 */
+#section03 {
+  #skills {
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .content03 {
+    margin-bottom: 1rem;
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #dadada;
+      @include xs {
+        margin-bottom: 1.2rem;
+      }
+
+      @include sm {
+        margin-bottom: 1.2rem;
+      }
+
+      @include md {
+        margin-bottom: 1.2rem;
+      }
+
+      @include lg {
+        margin-bottom: 0rem;
+      }
+
+      @include xl {
+        margin-bottom: 0rem;
+      }
+    }
+    .card:hover {
+      border: none;
+      box-shadow: 0 0 7px #999;
+      transition: 0.5s;
+    }
+    .card-title {
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .card-body {
+      justify-content: center;
+      i {
+        padding: 1rem;
+        font-size: 2.5rem;
+        text-align: center !important;
+        color: $c2;
+      }
+      .item {
+        padding-top: 3px;
+        text-align: center;
+      }
+      .item:last-child {
+        padding-left: 0;
+      }
+      .item ul {
+        padding-left: 28px;
+        display: inline-block;
+      }
+      .item li {
+        text-align: left;
+        font-size: 18px;
+      }
+      .item li:hover {
+        color: $c2;
+      }
+    }
+  }
+}
+
+/* section04 */
+#section04 {
+  #resume {
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .content04 {
+    .titleAbout {
+      color: $c2;
+      font-size: 20px;
+      font-weight: 900;
+      margin-top: 7px;
+      letter-spacing: 0.5px;
+    }
+  }
+  #wda,
+  #edu,
+  #people,
+  #knsh,
+  #ez,
+  #fpg {
+    margin: 1.25rem;
+    padding: 0.25rem 1rem;
+    border-left: 5px solid $c1;
+    .during {
+      color: #aaa;
+      margin-bottom: 0.3rem;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 0.3rem;
+    }
+    p:last-child {
+      margin-bottom: 5px;
+    }
+    ul {
+      margin-bottom: 5px;
+    }
+  }
+
+  #wda:hover,
+  #edu:hover,
+  #people:hover,
+  #knsh:hover,
+  #ez:hover,
+  #fpg:hover {
+    // background: $c1;
+    background: rgba(200, 230, 255, 0.3);
+    border-radius: 0 10px 10px 0;
+  }
+
+  #wda,
+  #edu {
+    p {
+      margin-bottom: 0;
+    }
+    .badge {
+      font-size: 14px;
+      margin-bottom: 0.2rem;
+    }
+    .badge:hover {
+      transform: scale(1.1);
+      margin: 0 0.5rem;
+      transition: 1s;
+    }
+    .badge-pill {
+      color: white;
+      background: $c2;
+      font-weight: 600;
+    }
+  }
+}
+
+/* section05 */
+#section05 {
+  #portfolio {
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .row {
+    @include xs {
+      .col-12 {
+        margin: 0.5rem 0;
+      }
+    }
+
+    @include sm {
+      .col-12 {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+  .content05 {
+    .card {
+      .card-title {
+        color: $c2;
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+      }
+      .card-text {
+        color: black;
+      }
+      .badge {
+        font-size: 14px;
+        margin-bottom: 0.2rem;
+      }
+      .badge-pill {
+        color: white;
+        background: #aaa;
+        font-weight: 600;
+      }
+    }
+    .accordion {
+      .card-header .btn {
+        color: #555;
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+      }
+      .card-body {
+        padding: 15px 20px 0 20px;
+      }
+      .subtitile {
+        font-size: 18px;
+        font-weight: 900;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0;
+        li {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+/* section06 */
+#section06 {
+  #contact {
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  i {
+    padding: 0 0.3rem;
+    font-size: 2rem;
+    color: $c2;
+  }
+}
+
+#footer {
+  height: 80px;
+  background: $c1;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  p {
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+  }
+}
